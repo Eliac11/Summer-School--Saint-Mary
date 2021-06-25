@@ -4,8 +4,8 @@ _
 _
 ## Кто?
 
-1. [@Eliac11](https://github.com/Eliac11)
-2. Null
+1. [@Denittka](https://github.com/Denittka)
+2. [@Eliac11](https://github.com/Eliac11)
 3. Null
 4. Null
 
