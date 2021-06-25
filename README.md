@@ -1,4 +1,4 @@
-# Summer-School--Holy-Mary
+# Summer-School--Saint-Mary
 _
 Ну это поиск белых медведий на белом снегу
 _
