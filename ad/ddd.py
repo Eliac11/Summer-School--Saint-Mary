@@ -13,20 +13,20 @@ image_size=(200, 200)
 
 # И да фотки я уменьшил до 200 на 200
 
-train_dataset = image_dataset_from_directory('ad\TESTIMAGES2',
+train_dataset = image_dataset_from_directory('TESTIMAGES2',
                                              subset='training',
                                              seed=42,
                                              validation_split=0.1,
                                              batch_size=batch_size,
                                              image_size=image_size)
 
-validation_dataset = image_dataset_from_directory('ad\TESTIMAGES2',
+validation_dataset = image_dataset_from_directory('TESTIMAGES2',
                                              subset='validation',
                                              seed=42,
                                              validation_split=0.1,
                                              batch_size=batch_size,
                                              image_size=image_size)
-test_dataset = image_dataset_from_directory('ad\TESTIMAGES2',
+test_dataset = image_dataset_from_directory('TESTIMAGES2',
                                              batch_size=batch_size,
                                              image_size=image_size)
 
@@ -46,7 +46,7 @@ test_dataset = test_dataset.prefetch(buffer_size=AUTOTUNE)
 model = Sequential()
 
 model.add(Conv2D(16, (5, 5), padding='same', 
-                 input_shape=(200, 200, 3), activation='relu'))
+                 input_shape=(image_size[0], image_size[1], 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
 model.add(Conv2D(32, (5, 5), activation='relu', padding='same'))
