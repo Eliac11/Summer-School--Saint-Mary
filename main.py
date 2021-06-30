@@ -27,7 +27,7 @@ cv2.imshow("1",img)
 # меняю насыщеность
 imghsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV).astype("float32")
 (h, s, v) = cv2.split(imghsv)
-s = s*5
+s = s*5.4
 s = np.clip(s,0,255)
 imghsv = cv2.merge([h,s,v])
 
