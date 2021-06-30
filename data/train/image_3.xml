@@ -1,0 +1,26 @@
+<annotation>
+	<folder>withBears</folder>
+	<filename>2016-04-25 14-09-54_2051_r_C.JPG</filename>
+	<path>C:\Users\danbe\Downloads\TEST IMAGES\withBears\2016-04-25 14-09-54_2051_r_C.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>7360</width>
+		<height>4912</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>5798</xmin>
+			<ymin>2958</ymin>
+			<xmax>5837</xmax>
+			<ymax>3025</ymax>
+		</bndbox>
+	</object>
+</annotation>
