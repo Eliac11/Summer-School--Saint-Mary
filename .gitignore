@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /.vs/
+.data/train.record
+.data/test.record

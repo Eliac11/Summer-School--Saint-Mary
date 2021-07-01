@@ -24,7 +24,6 @@ def change_contrast(file_name):
 
 for file_name in listdir("./workDirectory"):
     if file_name != "":
-
         print(f"\rProceed: {listdir('./workDirectory').index(file_name) / len(listdir('./workDirectory')) * 100}%", end="")
         change_contrast(file_name)
 
