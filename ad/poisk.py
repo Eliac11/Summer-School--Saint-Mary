@@ -5,6 +5,7 @@ import numpy as np
 
 def chose_bear(path):
     """
+    размер фотографии не важен(желательно ориг)
     пинимает путь к фото
     возвращает словарь с картинкой(img), есть медведь или нет(bearis), координаты медведя на картинке(xy)
 
@@ -38,7 +39,7 @@ def chose_bear(path):
                     i[2] += 1/d
     
     #
-    print(maxd)
+    #print(maxd)
     #
 
     #lutsh = max(maxd,key=lambda i: i[2])
@@ -52,7 +53,7 @@ def chose_bear(path):
     lutsh[1] = int(lutsh[1]/750*orig.shape[0])
 
     #
-    print(lutsh)
+    #print(lutsh)
     #
 
     if lutsh[2] > 5:
@@ -63,9 +64,12 @@ def chose_bear(path):
 
     return {"img":orig,"bearis":bis,"xy":(lutsh[0],lutsh[1])}
 
+
 if __name__ == "__main__":
 
-    result = chose_bear("ad/TESTIMAGES/withBears/" + "image_1.JPG")
+    result = chose_bear("ad/TESTIMAGES/empty/" + "2016-04-18 10-59-39_1663_L.JPG")
     cv2.imwrite('1.JPG',result["img"])
     cv2.imshow("1",result["img"])
+
+    print(result["bearis"])
     cv2.waitKey(0)
